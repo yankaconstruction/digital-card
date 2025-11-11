@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>כרטיס ביקור דיגיטלי</title>
+    <!-- טעינת Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- טעינת גופן Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Alef:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* שימוש בגופן Alef עבור עברית ו-Inter לאנגלית/מספרים */
+        body {
+            font-family: 'Alef', 'Inter', sans-serif;
+        }
+        /* ודא שהתמונות יכולות להתרחב קצת מעבר לגריד מבלי לגרום לגלילה (overflow hidden) */
+        .project-grid img {
+            transition: transform 0.3s ease-in-out;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 antialiased">
+
+    <div class="min-h-screen flex items-center justify-center p-4">
+        <div class="bg-white w-full max-w-md shadow-xl rounded-2xl overflow-hidden">
+            
+            <!-- אזור התמונה הראשית (באנר) -->
+            <div class="relative">
+                <!-- *** 1. תמונת באנר עליונה (החלף את ה-URL כאן) *** -->
+                <!-- *** חשוב! יש להשתמש בכתובת אינטרנט ציבורית (URL), לא בנתיב קובץ מקומי מהמחשב (כמו C:\Users\...) *** -->
+                <img src=https://scontent.ftlv19-3.fna.fbcdn.net/v/t51.75761-15/481612306_17939520968972571_7492261467714194254_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=127cfc&_nc_ohc=iWxuCDVwgPYQ7kNvwGHWYRU&_nc_oc=AdlMmsaAtANbyvAtznQ7Oi64IPYQqL1OXThwmL5KMI3gXkXYmlwgHhngtAfx4jdh9Dw&_nc_zt=23&_nc_ht=scontent.ftlv19-3.fna&_nc_gid=h8RD3mC_V4Qx1-okqzq0cg&oh=00_AfgrVmzBZ1ATg8yXB1rZl6C2V1KcNqErz3tQM9nWyG4xGw&oe=69197B34
+                     class="w-full h-40 object-cover">
+                
+                <div class="absolute -bottom-12 left-1/2 -translate-x-1/2">
+                    <!-- *** 2. תמונת פרופיל עגולה (החלף את ה-URL כאן) *** -->
+                    <!-- דוגמה: החלף את הכתובת בתוך ה-src לכתובת של תמונת הפרופיל שלך -->
+                    <img src=https://scontent.ftlv19-2.fna.fbcdn.net/v/t39.30808-6/490552011_1342064587368652_87775131057628569_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=86c6b0&_nc_ohc=LLpeybRm1DcQ7kNvwHO_Un6&_nc_oc=Admx7bteDd9v_oditwEb0MQ0Fxot_lgOjKuK4NAa_ZlFp_C4RJ9Py12HMHs8D6gkjFs&_nc_zt=23&_nc_ht=scontent.ftlv19-2.fna&_nc_gid=nXQC-arfoG1TPAp4r7rVtg&oh=00_AfjrrWYESAOZOG3GzZFAd5Nj581TFeXN-Z1Tdxqaz0jZRw&oe=6917FF26
+                         class="w-24 h-24 rounded-full border-4 border-white shadow-lg object-cover">
+                </div>
+            </div>
+
+            <!-- אזור הפרטים האישיים -->
+            <div class="text-center p-6 pt-16">
+                <!-- *** 3. השם המלא שלך (נערך לשם הדגמה) *** -->
+                <h1 class="text-3xl font-bold text-gray-800">ינקה יזמות ובנייה </h1>
+                <!-- החלף בתפקיד/תיאור שלך -->
+                <p class="text-lg text-blue-600 font-semibold mt-1"></p>
+                
+                <!-- קונטיינר מעוצב לפסקה -->
+                <div class="mt-4 p-4 border border-blue-100 bg-blue-50 rounded-xl shadow-inner">
+                    <p class="text-xl font-extrabold text-blue-800 mb-2">קצת עלינו</p>
+                    <p class="text-gray-700 text-sm leading-relaxed">
+                       איתנו אתם בונים שקט נפשי. חברת ינקה יזמות ובנייה מביאה עמה למעלה משלושה עשורים של מומחיות וביצוע חסר פשרות. אנו מתמחים בליווי פרויקטי יזמות ובנייה בשיטת 'קבלן מפתח' – אחריות מלאה מרגע הרעיון ועד לקבלת המפתח. כמו כן, אנו מומחים בשיפוצים יסודיים ומהפכים לקבלת בית חלומות, תוך הקפדה על הסטנדרטים הגבוהים ביותר.
+                    </p>
+                </div>
+            </div>
+
+            <!-- כפתורי יצירת קשר -->
+            <div class="flex justify-center gap-3 p-4 bg-gray-50 border-t border-b border-gray-200">
+                <!-- *** 4. כפתור חיוג (עודכן מספר) *** -->
+                <a href="#" id="dialButton" data-phone="0504337336" class="flex-1 text-center bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 px-4 rounded-lg shadow transition duration-300 flex items-center justify-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.518.832a11.024 11.024 0 006.95 6.95l.832-1.518a1 1 0 011.06-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path></svg>
+                    חיוג
+                </a>
+                <!-- *** 5. כפתור וואטסאפ (חדש) *** -->
+                <a href="https://wa.me/972504337336" target="_blank" class="flex-1 text-center bg-green-500 hover:bg-green-600 text-white font-semibold py-3 px-4 rounded-lg shadow transition duration-300 flex items-center justify-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.487 5.235 3.487 8.413.003 6.556-5.338 11.892-11.893 11.892-1.99-.001-3.906-.5-5.607-1.438l-6.315 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.449-4.434-9.887-9.889-9.887-5.448 0-9.886 4.434-9.889 9.887.002 2.021.63 3.96 1.719 5.611l-.375 1.362 1.381-.364z"/></svg>
+                    וואטסאפ
+                </a>
+                <!-- *** 6. כתובת דוא"ל (office.yanka@gmail.com) *** -->
+                <a href="mailto:office.yanka@gmail.com" class="flex-1 text-center bg-gray-600 hover:bg-gray-700 text-white font-semibold py-3 px-4 rounded-lg shadow transition duration-300 flex items-center justify-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path></svg>
+                    מייל
+                </a>
+            </div>
+
+            <!-- "התמונות" - גלריית פרויקטים -->
+            <div class="p-6">
+                <h2 class="text-xl font-bold text-gray-800 mb-4 text-center">פרויקטים נבחרים</h2>
+                <div class="grid grid-cols-2 gap-4">
+                    <!-- *** 7. תמונה 1 של פרויקט *** -->
+                    <img src=https://scontent.ftlv19-2.fna.fbcdn.net/v/t51.75761-15/506358978_17952241883972571_351272580735165154_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=127cfc&_nc_ohc=5L8eGu3dlzwQ7kNvwHEJEbt&_nc_oc=AdlMQpl1bHhsrt3eM8zEX_rKXRWGWuw7NzhMc_qx_cTGgXPIvSQSsFxNonpJg3Xf2Co&_nc_zt=23&_nc_ht=scontent.ftlv19-2.fna&_nc_gid=s2guyQhlATO519W56LipPQ&oh=00_Afh8jNZRF9WWfdoAzpE9pZ-pGn1GdFhqbUiqbqho3fM9ZA&oe=6917A6B2
+                         alt="פרויקט בנייה" 
+                         class="rounded-lg shadow-md object-cover w-full h-32 transition duration-300 hover:scale-105 cursor-pointer">
+                    <!-- *** 8. תמונה 2 של פרויקט *** -->
+                    <img src=https://scontent.ftlv19-1.fna.fbcdn.net/v/t51.75761-15/469353207_17929570055972571_285798251708418194_n.jpg?stp=dst-jpegr_tt6&_nc_cat=102&ccb=1-7&_nc_sid=127cfc&_nc_ohc=ZBRorwVqG74Q7kNvwHxHI-7&_nc_oc=AdlJVlNqr32a_4Zx1G89ZRO0gzmARfLWQjg6XawKmWl-YBUzK-1gXyQSyOsCDpQoEbs&_nc_zt=23&se=-1&_nc_ht=scontent.ftlv19-1.fna&_nc_gid=fJWQfGZxFkVjs2Ow0DXc0g&oh=00_AfgI7WQiydFf12TxCpUhlJa39fd1x8ehnlUFpN7CMO2Lug&oe=6917B80E
+                         alt="שיפוץ גדול" 
+                         class="rounded-lg shadow-md object-cover w-full h-32 transition duration-300 hover:scale-105 cursor-pointer">
+                    <!-- *** 9. תמונה 3 של פרויקט *** -->
+                    <img src=https://scontent.ftlv19-2.fna.fbcdn.net/v/t39.30808-6/486420728_1323153519259759_7082428125024849407_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=833d8c&_nc_ohc=z394Y6JIGmYQ7kNvwFgkp6i&_nc_oc=Adk0CB2swZpDaFMb5FcQRvZjLjFelNb0A8-rk6fnVvCwt7iqeCj2rj8T3ss1Z3Rngv4&_nc_zt=23&_nc_ht=scontent.ftlv19-2.fna&_nc_gid=-ksUklVgFn9gkuyez8IOvQ&oh=00_AfjjJbEcKp1_nZ-mU3l8YVEq0bjMgL8ml8DBuEREkgREMg&oe=6917C48F
+                         alt="פרויקט יזמות" 
+                         class="rounded-lg shadow-md object-cover w-full h-32 transition duration-300 hover:scale-105 cursor-pointer">
+                    <!-- *** 10. תמונה 4 של פרויקט *** -->
+                    <img src=https://scontent.ftlv19-1.fna.fbcdn.net/v/t39.30808-6/488657461_1333055544936223_8530573621627916599_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=833d8c&_nc_ohc=2LhzVmk9v-oQ7kNvwEzbm-l&_nc_oc=AdnqURyzrG-Kdqm_0RYUyjIrCbJfU-ZnLITF8Q_NGevgy9UST4fM8xXk_xeG3Tbw9z8&_nc_zt=23&_nc_ht=scontent.ftlv19-1.fna&_nc_gid=7le15wFkoQDqX73Qha1mrA&oh=00_AfiEMm_SIsaDc6Wz1L5V0x5zuqojT5WgrihB7Kh_Js80SQ&oe=69195709
+                         alt="פרויקט נוסף" 
+                         class="rounded-lg shadow-md object-cover w-full h-32 transition duration-300 hover:scale-105 cursor-pointer">
+                </div>
+            </div>
+
+            <!-- פוטר / סגירה -->
+            <div class="text-center p-4 bg-gray-800 text-white text-sm">
+                <!-- הסרתי את שורת הכתובת -->
+                
+                <!-- מיכל חדש שמסדר אותם בשורה עם ריווח -->
+                <div class="flex justify-center items-center gap-4 flex-wrap">
+                    <!-- הוספת כתובת המייל בקישור Mailto (יופיע בצד ימין ב-RTL) -->
+                    <p class="opacity-70">
+                        <a href="mailto:office.yanka@gmail.com" class="hover:text-white transition duration-200">
+                            office.yanka@gmail.com
+                        </a>
+                    </p>
+                    <!-- הוספת קישור לוואטסאפ גם בפוטר (מעודכן מספר) -->
+                    <p class="opacity-70">
+                        <a href="https://wa.me/972504337336" class="hover:text-white transition duration-200">
+                            050-433-7336
+                        </a>
+                    </p>
+                </div>
+
+                <p class="mt-2 opacity-70">כרטיס ביקור דיגיטלי © 2025</p>
+            </div>
+
+        </div>
+    </div>
+    
+    <!-- סקריפט JavaScript לטיפול בכפתור החיוג ומניעת רענון -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const dialButton = document.getElementById('dialButton');
+            
+            if (dialButton) {
+                dialButton.addEventListener('click', function(e) {
+                    // מונע את ההתנהגות הדיפולטיבית של הקישור (שגורמת לרענון הדף כאשר דפדפנים פנימיים לא תומכים בפרוטוקול 'tel:')
+                    e.preventDefault(); 
+                    
+                    const phoneNumber = this.getAttribute('data-phone');
+                    
+                    if (phoneNumber) {
+                        // מנסה לחייג למספר באופן יזום דרך JavaScript
+                        window.location.href = 'tel:' + phoneNumber;
+                    }
+                    
+                    // הערה: בסביבת העריכה (Canvas / iframe) ייתכן שעדיין לא יחייג, 
+                    // אך זה מבטיח שמכשירים ניידים רגילים לא ירעננו את הדף במקום לחייג.
+                });
+            }
+        });
+    </script>
+</body>
+</html>
